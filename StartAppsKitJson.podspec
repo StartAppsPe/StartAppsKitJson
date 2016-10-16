@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
 s.name             = 'StartAppsKitJson'
-s.version          = '0.9.1'
+s.version          = '0.9.2'
 s.summary          = 'A library that does everything.'
 s.description      = <<-DESC
 A library that does everything. Central class is LoadAction and it helps you work with asynchronous loading of data from any Source.
@@ -25,6 +25,6 @@ s.requires_arc     = true
 
 s.source_files     = 'Sources'
 
-s.dependency 'SwiftyJSON', '~> 3'
+s.dependency 'Jessie', '~> 0.9'
 
 end

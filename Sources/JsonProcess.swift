@@ -7,10 +7,17 @@
 //
 
 import Foundation
-import SwiftyJSON
+import Jessie
 
-public func JsonProcess(_ loadedValue: Data) throws -> JSON {
-    let object: Any = try JSONSerialization.jsonObject(with: loadedValue, options: .allowFragments)
-    return JSON(object)
+public func JsonProcess(_ loadedValue: Data) throws -> Json {
+    return try Json(loadedValue)
+}
+
+public func JsonProcess(_ loadedValue: [UInt8]) throws -> Json {
+    return try Json(loadedValue)
+}
+
+public func JsonProcess(_ loadedValue: String) throws -> Json {
+    return try Json(rawString: loadedValue)
 }
 
