@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Jessie",
+        "repositoryURL": "https://github.com/StartAppsPe/Jessie.git",
+        "state": {
+          "branch": null,
+          "revision": "05d24b07e0ac33696f4bef011d25dd5ac10265eb",
+          "version": "2.5.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
