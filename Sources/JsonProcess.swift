@@ -11,7 +11,7 @@ import Jessie
 
 enum JSONError: LocalizedError {
     case couldNotParseString, couldNotParseData
-    public var localizedDescription: String {
+    public var errorDescription: String {
         switch self {
         case .couldNotParseString: return "Could not parse string"
         case .couldNotParseData: return "Could not parse data"
@@ -21,7 +21,7 @@ enum JSONError: LocalizedError {
 
 public enum JsonInnerError: LocalizedError {
     case containsError(String)
-    public var localizedDescription: String {
+    public var errorDescription: String {
         switch self {
         case .containsError(let message): return message
         }
